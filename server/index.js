@@ -3,7 +3,7 @@ const mongoose=require('mongoose');
 const cors=require('cors');
 const shortid=require('shortid');
 require('dotenv').config();
-const Url = require('./models/Url'); // Assuming Url.js is in the models directory
+const Url = require('./models/Url'); 
 
 
 const app=express();
