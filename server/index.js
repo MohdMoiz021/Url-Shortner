@@ -53,6 +53,22 @@ app.get('/:code', async (req, res) => {
   }
 });
 
+app.get('/api/urls', async (req, res) => {
+  try {
+    const urls = await Url.find().sort({ createdAt: -1 }); // newest first
+    const baseUrl = "http://localhost:3000";
+
+    const formattedUrls = urls.map((url) => ({
+      originalUrl: url.originalUrl,
+      shortUrl: `${baseUrl}/${url.shortCode}`,
+      createdAt: url.createdAt,
+    }));
+
+    res.json(formattedUrls);
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to fetch URLs' });
+  }
+});
 
 
 

@@ -9,14 +9,13 @@ const urlSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true,
-
-
     },
     createdAt: {
         type: Date,
         default: Date.now,
         expires: '7d' 
-    }
+    },
+   
 });
 
 module.exports = mongoose.model('Url', urlSchema);
