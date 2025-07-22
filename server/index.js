@@ -36,7 +36,7 @@ app.post('/api/shorten', async (req, res) => {
 });
 
 
-// GET /:code → redirect to original URL
+
 app.get('/:code', async (req, res) => {
   const { code } = req.params;
 
