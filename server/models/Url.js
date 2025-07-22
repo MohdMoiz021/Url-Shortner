@@ -15,7 +15,7 @@ const urlSchema = new mongoose.Schema({
     createdAt: {
         type: Date,
         default: Date.now,
-        expires: '7d' // Document will be removed after 7 days
+        expires: '7d' 
     }
 });
 
