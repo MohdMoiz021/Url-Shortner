@@ -1,22 +1,74 @@
-.app {
-  text-align: center;
-  margin-top: 100px;
-  font-family: Arial, sans-serif;
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f6fc;
 }
 
-input {
-  padding: 10px;
-  width: 300px;
-  margin-right: 10px;
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.title {
+  text-align: center;
+  color: #1e40af;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   font-size: 16px;
 }
 
-button {
-  padding: 10px 15px;
+.button {
+  padding: 12px;
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #1d4ed8;
 }
 
 .result {
-  margin-top: 20px;
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #e0f2fe;
+  border-left: 4px solid #0ea5e9;
+  border-radius: 8px;
+}
+
+.result a {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: bold;
+  word-break: break-all;
 }
