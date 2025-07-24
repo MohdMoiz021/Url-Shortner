@@ -15,7 +15,7 @@ function App() {
     });
 
     const data = await res.json();
-    setShortUrl(data.shortUrl || "Something went wrong");
+    setShortUrl(data.shortUrl || "Something went wrong in the system");
   };
 
   return (
