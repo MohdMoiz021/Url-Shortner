@@ -14,7 +14,7 @@ app.post('/api/shorten', async (req, res) => {
     const { originalUrl } = req.body;
 
     if (!originalUrl) {
-        return res.status(400).json({ error: 'Original URL is required' });
+        return res.status(400).json({ error: 'Original URL is required!' });
     }
 
     const shortCode = shortid.generate();
