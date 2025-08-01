@@ -46,7 +46,7 @@ app.get('/:code', async (req, res) => {
     if (url) {
       return res.redirect(url.originalUrl);
     } else {
-      return res.status(404).json({ error: 'Short URL not founded' });
+      return res.status(404).json({ error: 'Short URL not founded in this!' });
     }
   } catch (err) {
     res.status(500).json({ error: 'Server error' });
